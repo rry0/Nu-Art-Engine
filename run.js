@@ -72,7 +72,7 @@ const layerOrder = [
 ];
 
 
-// BaseURI link. Can leave blank. You will need to get this yourself using an IPFS provider and adding the link here. 
+// BaseURI link. Can leave blank. You will need to get this yourself using an IPFS provider and adding the link here and using the option.
 
 const baseURI = ''; // insert base URI inside "/youripfslinkhere"
 
@@ -265,6 +265,7 @@ async function saveImageData(index, imagePath, imageAttributes, imageHash) {
         const jsonData = {
             name: `${colName} #${index}`,
             image: "",
+            ethscription_id,
             hash: imageHash,
             description: "",
             external_url: "",
