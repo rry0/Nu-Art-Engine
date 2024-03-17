@@ -1,4 +1,4 @@
-#  NU ART GENERATOR
+#  NU ART ENGINE
 
                                                                             
 ```
@@ -25,7 +25,9 @@
 
 📟 Set up layers folder structure inside NuArt Directory /layers
 
-📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button)
+  - Rarity is determined via a #number in the filename of the trait. For example, SmallHat#500.png will be rarer than BigHat#5000.png
+
+📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button) (VSCODE)
 
 📟 Install dependencies by running npm install - Check top of script for list of dependencies.
 
