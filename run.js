@@ -76,7 +76,7 @@ const layerOrder = [
 
 const baseURI = ''; // insert base URI inside "/youripfslinkhere"
 
-
+const ethscription_id = ''; // For Ethscriptions
 
 
 
