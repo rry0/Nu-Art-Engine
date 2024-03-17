@@ -1,4 +1,4 @@
-#  NU ART GENERATOR
+#  NU ART Engine
 
                                                                             
 ```
