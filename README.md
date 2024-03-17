@@ -34,7 +34,7 @@
 📟 If setup is correct, watch the output in output folders. metadata.json, hashlist.txt, build /json & /images
 ```
 
-# 🤝 Contributions
+## 🤝 Contributions
 
 ```
 Contributions to the Nu Open Source Art Engine are welcome! If you'd like to contribute, please follow these guidelines:
@@ -46,7 +46,7 @@ Done ✅
 ```
 
 
-# 👽 Support
+## 👽 Support
 
 ```
 😈 Built and compiled by Ryo | https://twitter.com/ryoETH
