@@ -55,7 +55,7 @@ Done ✅
 
 ☕️ Buy me a coffee 
 
-$ETH - 0x247DF8068F31CfD01dD9E860BfcB90289979d615
+$ETH - 0xd76e1bCe8AD1be33a1C46ceb984c92deDB97fbe4
 
 $Solana - AiV7fHuJSiAUk1TiASDLmtkuL5vKGiN7SWbbaTGTpt3F
 ```
