@@ -25,7 +25,7 @@
 
 📟 Set up layers folder structure inside NuArt Directory /layers
 
-📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button)
+📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button) (VSCODE)
 
 📟 Install dependencies by running npm install - Check top of script for list of dependencies.
 
