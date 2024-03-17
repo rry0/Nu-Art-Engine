@@ -1,84 +1,36 @@
-███╗   ██╗██╗   ██╗     █████╗ ██████╗ ████████╗                                      
-████╗  ██║██║   ██║    ██╔══██╗██╔══██╗╚══██╔══╝                                      
-██╔██╗ ██║██║   ██║    ███████║██████╔╝   ██║                                         
-██║╚██╗██║██║   ██║    ██╔══██║██╔══██╗   ██║                                         
-██║ ╚████║╚██████╔╝    ██║  ██║██║  ██║   ██║                                         
-╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝                                         
-                                                                                  
-██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗    
-██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║    
-██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║   ██║   ██║██║   ██║██╔██╗ ██║    
-██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║   ██║   ██║██║   ██║██║╚██╗██║    
-╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║    
-╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    
-                                                                                  
-███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███████╗                                      
-██╔════╝████╗  ██║██╔════╝ ██║████╗  ██║██╔════╝                                      
-█████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗                                     
-██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝                                        
-███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗                                      
-╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   v1  
+Nu Open Source Art Engine
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-🌟 WELCOME TO THE NU OPEN SOURCE ART ENGINE 🌟
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-    ______           __                      
-   / ____/__  ____ _/ /___  __________  _____
-  / /_  / _ \/ __ `/ __/ / / / ___/ _ \/ ___/
- / __/ /  __/ /_/ / /_/ /_/ / /  /  __(__  ) 
-/_/    \___/\__,_/\__/\__,_/_/   \___/____/  
-                                                                                     
-🔥 Create collections from traits
+Welcome to the Nu Open Source Art Engine, a powerful tool for generating unique and customizable art collections. Inspired by the classic Hashlips Art Engine, this project offers enhanced features and flexibility for artists and developers alike.
 
-💻 Multiple choice options for functions
+Features
+Trait-Based Collections: Create diverse collections by defining traits and generating unique combinations.
+Multiple Choice Options: Customize generation with multiple choice options for functions, enabling more control over the output.
+Automated Directory Management: Directories are auto-built and cleared, simplifying the organization of generated assets.
+Hashing and Duplication Checking: Generates a SHA256 hash for each generation and checks against a hashlist to avoid duplicate outputs.
+JSON and Metadata Creation: Automatically creates .json and .metadata files for each generation, providing additional information and metadata.
+Upscaling and Saving: Upscales generations to desired sizes and saves them for easy access and distribution.
+Usage
+Setup Layers: Organize layer components within the /layers directory of the NuArt directory.
+Install Dependencies: Run npm install to install the required dependencies listed at the top of the script.
+Generate Collections: Execute node run.js and follow the prompts to generate collections.
+View Output: Check the output folders for generated files, including metadata.json, hashlist.txt, and directories for JSON and images.
+Support
+For questions, feedback, or support, feel free to reach out to the developer:
 
-🔨 Directories auto build and clear
+Ryo
 
-🔐 Creates a SHA256 hash of the generation and adds it to hashlist.txt
-
-🔍 Checks new generation hashes against the hashlist to avoid dupes
-
-📝 Creates .jsons and .metadata files
-
-💾 Upscales generations to desired size and saves
-
-🚀 Inspired by the classic Hashlips Art Engine
-
- ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
-    __  __                 __                         
-   / / / /___ _      __   / /_____     __  __________ 
-  / /_/ / __ \ | /| / /  / __/ __ \   / / / / ___/ _ \
- / __  / /_/ / |/ |/ /  / /_/ /_/ /  / /_/ (__  )  __/
-/_/ /_/\____/|__/|__/   \__/\____/   \__,_/____/\___/ 
-                                                      
-
-💻 To generate a collection:
-
-📟 Set up layers folder structure inside NuArt Directory /layers
-
-📟 Install dependencies by running npm install - Check top of script for list of dependencies.
-
-📟 Type  node run.js   then press [Enter] inside code editor and follow the prompts
-
-📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button)
-
-📟 If setup is correct, watch the output in output folders. metadata.json, hashlist.txt, build /json & /images
-
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-
+Twitter: https://twitter.com/ryoETH
+Contributions
 Contributions to the Nu Open Source Art Engine are welcome! If you'd like to contribute, please follow these guidelines:
 
 Fork the repository.
 Make your changes.
 Submit a pull request with a clear description of your changes.
+Donations
+If you find this tool useful and would like to support its development, consider making a donation:
 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Ethereum (ETH): 0x247DF8068F31CfD01dD9E860BfcB90289979d615
+Solana (SOL): AiV7fHuJSiAUk1TiASDLmtkuL5vKGiN7SWbbaTGTpt3F
+Your contributions help keep this project active and maintained.
 
-😈 Built and compiled by Ryo | https://twitter.com/ryoETH
-
-☕️ Buy me a coffee 
-
-$ETH - 0x247DF8068F31CfD01dD9E860BfcB90289979d615
-
-$Solana - AiV7fHuJSiAUk1TiASDLmtkuL5vKGiN7SWbbaTGTpt3F
+This README content should be ready to use for your GitHub repository. Let me know if you need further assistance!
