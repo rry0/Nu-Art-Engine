@@ -76,13 +76,15 @@ $Solana - AiV7fHuJSiAUk1TiASDLmtkuL5vKGiN7SWbbaTGTpt3F
 
 💻 To generate a collection:
 
+📟 Download Repository and open with code editor
+
 📟 Set up layers folder structure inside NuArt Directory /layers
+
+📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button)
 
 📟 Install dependencies by running npm install - Check top of script for list of dependencies.
 
 📟 Type  node run.js   then press [Enter] inside code editor and follow the prompts
-
-📟 Open terminal via New > New Terminal or Press Ctrl + ` (left of 1 button)
 
 📟 If setup is correct, watch the output in output folders. metadata.json, hashlist.txt, build /json & /images
 
