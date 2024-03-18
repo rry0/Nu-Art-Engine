@@ -14,7 +14,15 @@ const { createCanvas, loadImage } = require('canvas');
   \__ \/ __/ __ `/ ___/ __/  / /_/ / _ \/ ___/ _ \
  ___/ / /_/ /_/ / /  / /_   / __  /  __/ /  /  __/
 /____/\__/\__,_/_/   \__/  /_/ /_/\___/_/   \___/ 
-                                                  
+     
+
+Suggested order of operations:
+
+1. Generate Images
+2. Upload to IPFS (Do this yourself, NFTStorage)
+3. Add IPFS CID
+3. Remove .json if needed
+
 */   
 
 // Enter Information between ""  - For example, colName = "NuArt";
