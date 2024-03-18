@@ -81,11 +81,11 @@ const layerOrder = [
 ];
 
 
-// BaseURI link. Can leave blank. You will need to get this yourself using an IPFS provider and adding the link here and using the option.
+// BaseURI link = CID - Can leave blank. You will need to get this yourself using an IPFS provider and adding the link here and using the option.
 
-const baseURI = ''; // insert base URI inside "/youripfslinkhere" it will append /1.png to the CID foe each item
+const baseURI = ''; // insert base URI inside "/youripfslinkhere" it will append /1.png to the CID for each item
 
-const ethscription_id = ''; // For Ethscriptions
+const ethscription_id = ''; // For Ethscriptions - needs work, coming soon
 
 
 
