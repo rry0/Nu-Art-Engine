@@ -74,7 +74,7 @@ const layerOrder = [
 
 // BaseURI link. Can leave blank. You will need to get this yourself using an IPFS provider and adding the link here and using the option.
 
-const baseURI = ''; // insert base URI inside "/youripfslinkhere"
+const baseURI = ''; // insert base URI inside "/youripfslinkhere" it will append /1.png to the CID foe each item
 
 const ethscription_id = ''; // For Ethscriptions
 
@@ -369,6 +369,9 @@ async function main() {
                 case '4':
                     uploadToIPFS();
                     break;
+                case '5':
+                    addEthscriptionId();
+                    break;
                 default:
                     console.log('\x1b[31mInvalid choice. Please enter a number between \x1b[36m1\x1b[31m and \x1b[36m4\x1b[31m.\x1b[0m');
                     break;
@@ -387,7 +390,7 @@ async function main() {
 // Function to get user choice
 function getUserChoice() {
     return new Promise((resolve, reject) => {
-        rl.question('\x1b[36mPlease choose an option:\n\x1b[36m1. \x1b[0mGenerate Images\n\x1b[36m2. \x1b[0mAdd Base URI\n\x1b[36m3. \x1b[0mRemove .json Extensions\n\x1b[36m4. \x1b[0mUpload to IPFS (Coming Soon)\n\x1b[36mChoice: \x1b[0m', (answer) => {
+        rl.question('\x1b[36mPlease choose an option:\n\x1b[36m1. \x1b[0mGenerate Images\n\x1b[36m2. \x1b[0mAdd Base URI\n\x1b[36m3. \x1b[0mRemove .json Extensions\n\x1b[36m4. \x1b[0mUpload to IPFS (Coming Soon)\n\x1b[36m5. \x1b[0mAdd Ethscription ID\n\x1b[36mChoice: \x1b[0m', (answer) => {
             resolve(answer);
         });
     });
@@ -413,7 +416,7 @@ async function addBaseURI(baseURI, jsonDir) {
             const jsonData = require(filePath); // Assuming JSON files are in proper format
 
             // Update the "image" field with the base URI
-            jsonData.image = baseURI;
+            jsonData.image = `${baseURI}/${jsonFile.split('.')[0]}.png`;
 
             // Write the modified JSON back to the file
             await fs.writeFile(filePath, JSON.stringify(jsonData, null, 2));
@@ -426,6 +429,35 @@ async function addBaseURI(baseURI, jsonDir) {
         console.error('An error occurred:', error);
     }
 }
+
+// 
+async function addEthscriptionId(ethscription_id, jsonDir) {
+    try {
+        // Read all JSON files in the directory
+        const jsonFiles = await fs.readdir(jsonDir);
+
+        // Iterate through each JSON file
+        for (const jsonFile of jsonFiles) {
+            // Read the JSON data
+            const filePath = path.join(jsonDir, jsonFile);
+            const jsonData = require(filePath); // Assuming JSON files are in proper format
+
+            // Update the "image" field with the base URI
+            jsonData.ethscription_id = ethscription_id;
+
+            // Write the modified JSON back to the file
+            await fs.writeFile(filePath, JSON.stringify(jsonData, null, 2));
+
+            console.log(`Base URI added to ${jsonFile}`);
+        }
+
+        console.log('Base URI added to all JSON files successfully.');
+    } catch (error) {
+        console.error('An error occurred:', error);
+    }
+}
+
+
 // Function to remove .json extensions from JSON files
 async function removeJsonExtensions(jsonDir) {
     try {
