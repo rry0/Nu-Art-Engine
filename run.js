@@ -65,6 +65,7 @@ const layerOrder = [
 
     '',
     '',
+    '',
     ''
 
     // Top
@@ -430,7 +431,7 @@ async function addBaseURI(baseURI, jsonDir) {
     }
 }
 
-// 
+//  not complete 
 async function addEthscriptionId(ethscription_id, jsonDir) {
     try {
         // Read all JSON files in the directory
@@ -456,7 +457,6 @@ async function addEthscriptionId(ethscription_id, jsonDir) {
         console.error('An error occurred:', error);
     }
 }
-
 
 // Function to remove .json extensions from JSON files
 async function removeJsonExtensions(jsonDir) {
@@ -485,7 +485,7 @@ async function removeJsonExtensions(jsonDir) {
         console.error('An error occurred:', error);
     }
 }
-// Function to upload to IPFS
+// Function to upload to IPFS - not complete
 function uploadToIPFS() {
     // Your implementation here
     console.log('Uploading to IPFS...');
