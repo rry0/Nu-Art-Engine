@@ -8,7 +8,7 @@ const baseDir = path.resolve(__dirname);
 const { createCanvas, loadImage } = require('canvas');
 
 
-/*test
+/*
    _____ __             __     __  __             
   / ___// /_____ ______/ /_   / / / /__  ________ 
   \__ \/ __/ __ `/ ___/ __/  / /_/ / _ \/ ___/ _ \
